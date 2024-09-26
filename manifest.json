@@ -29,6 +29,14 @@
       "matches": [
         "https://tixcraft.com/ticket/area/*"
       ]
+    },
+    {
+      "js": [
+        "scripts/ticket.js"
+      ],
+      "matches": [
+        "https://tixcraft.com/ticket/ticket/*"
+      ]
     }
   ]
 }

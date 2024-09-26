@@ -2,7 +2,7 @@ const seats = document.querySelectorAll('.area-list > li > a')
 
 
 if (seats) {
-    seat = select(seats)
+    seat = selectSeat(seats)
     seat.click()
 } else {
 
@@ -10,7 +10,7 @@ if (seats) {
 
 
 // TODO: apply rules for selection
-function select(seats) {
+function selectSeat(seats) {
     let array = Array.from(seats)
     return array[array.length - 1]
 }
