@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Ticketing Intern",
+  "description": "You hire an intern to help you book the concern tickets",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": "default_icon.png"
+  }
+}
