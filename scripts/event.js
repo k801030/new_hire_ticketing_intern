@@ -2,7 +2,6 @@ const events = document.querySelectorAll('#gameList > table > tbody > tr')
 
 
 if (events) {
-    console.log(`events are found: ${events}`)
     const validEvents = Array.from(events).filter(event => isValidEvent(event))
 
     if (validEvents.length === 0) {

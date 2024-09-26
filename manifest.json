@@ -21,6 +21,14 @@
       "matches": [
         "https://tixcraft.com/activity/*"
       ]
+    },
+    {
+      "js": [
+        "scripts/seat.js"
+      ],
+      "matches": [
+        "https://tixcraft.com/ticket/area/*"
+      ]
     }
   ]
 }
