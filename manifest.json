@@ -3,8 +3,24 @@
   "name": "Ticketing Intern",
   "description": "You hire an intern to help you book the concern tickets",
   "version": "1.0",
+  "permissions": [
+    "tabs"
+  ],
   "action": {
     "default_popup": "popup/popup.html",
     "default_icon": "images/icon.png"
-  }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/event.js"
+      ],
+      "matches": [
+        "https://tixcraft.com/activity/*"
+      ]
+    }
+  ]
 }
