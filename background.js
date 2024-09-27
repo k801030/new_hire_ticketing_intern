@@ -3,7 +3,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     sendResponse({message: "Hello from background script!"});
     switch (request.message) {
         case "reload()":
-            chrome.tabs.reload()
+            chrome.tabs.reload(sender.tab.id)
             break
         default:
             console.log("Unknown command");
