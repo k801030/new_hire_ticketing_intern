@@ -51,6 +51,10 @@ get(EVENT_NAME, (result) => {
     event.value = result
 })
 
+get(SEAT_NAME, (result) => {
+    seat.value = result
+})
+
 get(TICKET_COUNT, (result) => {
     updateButton(result)
 })
