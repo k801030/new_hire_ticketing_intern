@@ -4,7 +4,8 @@
   "description": "You hire an intern to help you book the concern tickets",
   "version": "1.0",
   "permissions": [
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "action": {
     "default_popup": "popup/popup.html",
@@ -16,10 +17,18 @@
   "content_scripts": [
     {
       "js": [
+        "scripts/pre_event.js"
+      ],
+      "matches": [
+        "https://tixcraft.com/activity/detail/*"
+      ]
+    },
+    {
+      "js": [
         "scripts/event.js"
       ],
       "matches": [
-        "https://tixcraft.com/activity/*"
+        "https://tixcraft.com/activity/game/*"
       ]
     },
     {
