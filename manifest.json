@@ -22,6 +22,7 @@
   "content_scripts": [
     {
       "js": [
+        "scripts/common/storage.js",
         "scripts/pre_event.js"
       ],
       "matches": [
@@ -30,6 +31,7 @@
     },
     {
       "js": [
+        "scripts/common/storage.js",
         "scripts/event.js"
       ],
       "matches": [
@@ -38,6 +40,7 @@
     },
     {
       "js": [
+        "scripts/common/storage.js",
         "scripts/seat.js"
       ],
       "matches": [
@@ -46,6 +49,7 @@
     },
     {
       "js": [
+        "scripts/common/storage.js",
         "scripts/ticket.js"
       ],
       "matches": [
