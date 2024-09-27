@@ -5,7 +5,7 @@ function handler() {
 
     const seats = document.querySelectorAll('.area-list > li > a')
     if (seats) {
-        seat = selectSeat(seats)
+        const seat = selectSeat(seats)
         seat.click()
     } else {
 
@@ -15,6 +15,11 @@ function handler() {
 
 // TODO: apply rules for selection
 function selectSeat(seats) {
-    let array = Array.from(seats)
-    return array[array.length - 1]
+    for (let seat of seats) {
+        if (seat.textContent.includes(storage.seatName)) {
+            return seat
+        }
+    }
+    // if not found, return first one
+    return seat[0]
 }

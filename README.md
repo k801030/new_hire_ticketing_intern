@@ -8,8 +8,8 @@
 
 ### High priority
 
-### Medium priority
+- [x] Support keyword seat selection
 
-- add icon: https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-on-every-tab
+### Medium priority
 
 ### Low priority

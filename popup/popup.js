@@ -1,4 +1,5 @@
 const EVENT_NAME = "eventName";
+const SEAT_NAME = "seatName";
 const TICKET_COUNT = "ticketCount";
 const IS_ACTIVE = "isActive";
 
@@ -19,8 +20,12 @@ function get(key, callback) {
 
 const event = document.getElementById('event');
 event.addEventListener('input', function (event) {
-    const eventName = event.target.value;
-    set(EVENT_NAME, eventName);
+    set(EVENT_NAME, event.target.value);
+})
+
+const seat = document.getElementById('seat');
+seat.addEventListener('input', function (event) {
+    set(SEAT_NAME, event.target.value);
 })
 
 const countPicker = document.getElementById('count-picker');
