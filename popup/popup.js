@@ -11,7 +11,7 @@ function set(key, value) {
 
 function get(key, callback) {
     chrome.storage.local.get([key], (result) => {
-        const data = result[key];
+        const data = result[key] || '';
         console.log(`Data loaded: ${data}`);
         callback(data)
     });
