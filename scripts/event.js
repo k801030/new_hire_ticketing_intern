@@ -1,5 +1,7 @@
 registerStorageEvents(handler)
 
+refresh_interval_ms = 300
+
 function handler() {
     if (!storage.isActive) return;
 
@@ -7,7 +9,7 @@ function handler() {
     if (events) {
         const validEvents = Array.from(events).filter(event => isValidEvent(event))
         if (validEvents.length === 0) {
-            setTimeout(reload, 1000)
+            setTimeout(reload, refresh_interval_ms)
         }
 
         for (let event of validEvents) {

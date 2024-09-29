@@ -15,7 +15,6 @@ function handler() {
 }
 
 
-// TODO: apply rules for selection
 function selectTicket(options) {
     for (const option of options) {
         if (option.value === storage.ticketCount) {
