@@ -12,14 +12,23 @@ function handler() {
     }
 }
 
-
-// TODO: apply rules for selection
 function selectSeat(seats) {
     for (let seat of seats) {
         if (seat.textContent.includes(storage.seatName)) {
             return seat
         }
     }
-    // if not found, return first one
-    return seat[0]
+
+    seats = Array.from(seats)
+    return randomItem(seats)
+}
+
+/**
+ * Pick a random item from the array
+ * @param items
+ * @returns item
+ */
+function randomItem(items) {
+    const randomIndex = Math.floor(Math.random() * items.length);
+    return items[randomIndex];
 }
