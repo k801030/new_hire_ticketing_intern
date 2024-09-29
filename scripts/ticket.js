@@ -5,7 +5,7 @@ function handler() {
     const select = document.querySelector('table#ticketPriceList > tbody > tr').querySelector('select')
 
     if (select) {
-        let option = selectTicket(select.options)
+        const option = selectTicket(select.options)
         option.selected = true
     }
     const agreement = document.querySelector('#TicketForm_agree')

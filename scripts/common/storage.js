@@ -14,7 +14,7 @@ const storage = {
 // register the storages event
 function registerStorageEvents(callback) {
     chrome.storage.local.onChanged.addListener((changes, namespace) => {
-        for (let [key, {oldValue, newValue}] of Object.entries(changes)) {
+        for (const [key, {oldValue, newValue}] of Object.entries(changes)) {
             switch (key) {
                 case EVENT_NAME:
                     storage.eventName = newValue

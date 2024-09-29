@@ -13,7 +13,7 @@ function handler() {
 }
 
 function selectSeat(seats) {
-    for (let seat of seats) {
+    for (const seat of seats) {
         if (seat.textContent.includes(storage.seatName)) {
             return seat
         }

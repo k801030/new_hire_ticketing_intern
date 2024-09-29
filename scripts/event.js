@@ -12,16 +12,16 @@ function handler() {
             setTimeout(reload, refresh_interval_ms)
         }
 
-        for (let event of validEvents) {
-            let findTicketButton = event.querySelector('button')
+        for (const event of validEvents) {
+            const findTicketButton = event.querySelector('button')
             findTicketButton.click()
         }
     }
 }
 
 function isValidEvent(event) {
-    let findTicketTexts = ['立即訂購', 'Find tickets', 'お申込みへ進む']
-    let unavailableTexts = ['選購一空', 'No tickets available', '空席なし']
+    const findTicketTexts = ['立即訂購', 'Find tickets', 'お申込みへ進む']
+    const unavailableTexts = ['選購一空', 'No tickets available', '空席なし']
     return event.textContent.includes(storage.eventName) &&
         include(event.textContent, findTicketTexts) &&
         notInclude(event.textContent, unavailableTexts)
