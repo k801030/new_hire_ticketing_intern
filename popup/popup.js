@@ -46,6 +46,9 @@ stop.addEventListener('click', function (event) {
     isActive(false)
 })
 
+const isExecuting = document.getElementById('executing');
+const startText = document.getElementById('start-text');
+
 // set default values
 get(EVENT_NAME, (result) => {
     event.value = result
@@ -77,4 +80,6 @@ function updateButton(value) {
 function isActive(value) {
     start.disabled = value;
     stop.disabled = !value;
+    isExecuting.hidden = !value;
+    startText.hidden = value;
 }
