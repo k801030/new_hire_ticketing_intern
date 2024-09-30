@@ -3,3 +3,154 @@ html
     width: 240px;  /* max: 800px */
     height: 360px; /* max: 600px */
 }
+
+
+/*------------------------------------
+- COLOR primary https://lingtalfi.com/bootstrap4-color-generator
+------------------------------------*/
+.alert-primary {
+    color: #052821;
+    background-color: #87edd8;
+    border-color: #75ebd2;
+}
+
+.alert-primary hr {
+    border-top-color: #5ee8cb;
+}
+
+.alert-primary .alert-link {
+    color: #000000;
+}
+
+.badge-primary {
+    color: #fff;
+    background-color: #159479;
+}
+
+.badge-primary[href]:hover, .badge-primary[href]:focus {
+    color: #fff;
+    background-color: #0e6754;
+}
+
+.bg-primary {
+    background-color: #159479 !important;
+}
+
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+    background-color: #0e6754 !important;
+}
+
+.border-primary {
+    border-color: #159479 !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #159479;
+    border-color: #159479;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #10745f;
+    border-color: #0e6754;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(21, 148, 121, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #159479;
+    border-color: #159479;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #0e6754;
+    border-color: #0c5949;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(21, 148, 121, 0.5);
+}
+
+.btn-outline-primary {
+    color: #159479;
+    background-color: transparent;
+    border-color: #159479;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #159479;
+    border-color: #159479;
+}
+
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(21, 148, 121, 0.5);
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+    color: #159479;
+    background-color: transparent;
+    border-color: #159479;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #159479;
+    border-color: #159479;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(21, 148, 121, 0.5);
+}
+
+.list-group-item-primary {
+    color: #052821;
+    background-color: #75ebd2;
+}
+
+.list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
+    color: #052821;
+    background-color: #5ee8cb;
+}
+
+.list-group-item-primary.list-group-item-action.active {
+    color: #fff;
+    background-color: #052821;
+    border-color: #052821;
+}
+
+.table-primary,
+.table-primary > th,
+.table-primary > td {
+    background-color: #75ebd2;
+}
+
+.table-hover .table-primary:hover {
+    background-color: #5ee8cb;
+}
+
+.table-hover .table-primary:hover > td,
+.table-hover .table-primary:hover > th {
+    background-color: #5ee8cb;
+}
+
+.text-primary {
+    color: #159479 !important;
+}
+
+a.text-primary:hover, a.text-primary:focus {
+    color: #0e6754 !important;
+}
+
+.form-floating.mb-3 > .form-control:focus {
+    border: #159479;
+    outline: 1px solid #159479;
+    box-shadow: 0 0 0 4px rgba(66, 150, 131, 0.42); /* or whatever colour you'd prefer */
+}
