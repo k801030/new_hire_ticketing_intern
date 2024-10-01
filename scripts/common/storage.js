@@ -2,12 +2,14 @@ const EVENT_NAME = "eventName";
 const SEAT_NAME = "seatName";
 const TICKET_COUNT = "ticketCount";
 const IS_ACTIVE = "isActive";
+const VERIFICATION_CODE = "verificationCode";
 
 const storage = {
     eventName: null,
     seatName: null,
     ticketCount: "1",
-    isActive: false
+    isActive: false,
+    verificationCode: null,
 }
 
 
@@ -28,6 +30,9 @@ function registerStorageEvents(callback) {
                 case IS_ACTIVE:
                     storage.isActive = newValue;
                     break;
+                case VERIFICATION_CODE:
+                    storage.verificationCode = newValue;
+                    break;
             }
             console.log(`${key} update to ${newValue}`)
         }
@@ -40,6 +45,7 @@ function registerStorageEvents(callback) {
         storage.seatName = result[SEAT_NAME]
         storage.ticketCount = result[TICKET_COUNT]
         storage.isActive = result[IS_ACTIVE]
+        storage.verificationCode = result[VERIFICATION_CODE]
         callback()
     });
 }

@@ -2,6 +2,7 @@ const EVENT_NAME = "eventName";
 const SEAT_NAME = "seatName";
 const TICKET_COUNT = "ticketCount";
 const IS_ACTIVE = "isActive";
+const VERIFICATION_CODE = "verificationCode";
 
 
 function set(key, value) {
@@ -26,6 +27,11 @@ event.addEventListener('input', function (event) {
 const seat = document.getElementById('seat');
 seat.addEventListener('input', function (event) {
     set(SEAT_NAME, event.target.value);
+})
+
+const verificationCode = document.getElementById('verification-code');
+verificationCode.addEventListener('input', function (event) {
+    set(VERIFICATION_CODE, event.target.value);
 })
 
 const countPicker = document.getElementById('count-picker');
@@ -58,12 +64,15 @@ get(SEAT_NAME, (result) => {
     seat.value = result
 })
 
+get(VERIFICATION_CODE, (result) => {
+    verificationCode.value = result
+})
+
 get(TICKET_COUNT, (result) => {
     updateButton(result)
 })
 
 get(IS_ACTIVE, (result) => {
-    console.log(`current is active: ${result}`)
     isActive(result)
 })
 

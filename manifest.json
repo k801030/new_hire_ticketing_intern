@@ -40,6 +40,15 @@
     {
       "js": [
         "scripts/common/storage.js",
+        "scripts/verification.js"
+      ],
+      "matches": [
+        "https://tixcraft.com/ticket/verify/*"
+      ]
+    },
+    {
+      "js": [
+        "scripts/common/storage.js",
         "scripts/seat.js"
       ],
       "matches": [
