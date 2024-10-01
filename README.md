@@ -9,9 +9,7 @@
 ### Zip the project
 
 ```
-mkdir -p dist
-rm dist/ticketing_intern.zip
-zip -r dist/ticketing_intern.zip . -x "dest/*" -x ".idea/*" -x ".**/*" -x ".*" -x Makefile
+make publish
 ```
 
 ### Upload the zip file via the developer console
