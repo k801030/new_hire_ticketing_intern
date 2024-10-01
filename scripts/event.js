@@ -11,28 +11,17 @@ function handler() {
         if (validEvents.length === 0) {
             setTimeout(reload, refresh_interval_ms)
         }
-
-        for (const event of validEvents) {
-            const findTicketButton = event.querySelector('button')
-            findTicketButton.click()
-        }
+        const event = selectOrRandom(validEvents, storage.eventName)
+        const findTicketButton = event.querySelector('button')
+        findTicketButton.click()
     }
 }
 
 function isValidEvent(event) {
     const findTicketTexts = ['立即訂購', 'Find tickets', 'お申込みへ進む']
     const unavailableTexts = ['選購一空', 'No tickets available', '空席なし']
-    return event.textContent.includes(storage.eventName) &&
-        include(event.textContent, findTicketTexts) &&
+    return include(event.textContent, findTicketTexts) &&
         notInclude(event.textContent, unavailableTexts)
-}
-
-function include(content, words) {
-    return words.some(word => content.includes(word))
-}
-
-function notInclude(content, words) {
-    return !include(content, words)
 }
 
 
